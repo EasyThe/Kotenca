@@ -4,4 +4,4 @@ Software Technologies Team for Practical Project
 # Членове
 * EasyThe / SeyhanHalil - Seyhan Halil - Skype: sekoto15
 * StanimirP - Stanimir Petrov - Skype: hacker3220
-* StevenStoianov - ? - Skype: ?
+* preslav95 - Preslav Velikov - 
