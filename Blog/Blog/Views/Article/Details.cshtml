@@ -1,29 +1,31 @@
 ﻿@model Blog.Models.Article
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = Model.Title;
 }
 
 
-
-<div class="container">
-    <article>
-        <header>
-            <h2>
-                @Model.Title
-            </h2>
-        </header>
-        <p>
-            @Model.Content
-        </p>
-        <small class="author">
-            --author @Model.Author.FullName
-        </small>
-        <footer class="pull-right">
-            @Html.ActionLink("Edit", "Edit", "Article", new { @id = Model.Id }, new { @class = "btn btn-success btn-xs" })
-            @Html.ActionLink("Delete", "Delete", "Article", new { @id = Model.Id }, new { @class = "btn btn-danger btn-xs" })
-            @Html.ActionLink("Back", "Index", "Article", null, new { @class = "btn btn-default btn-xs" })
-        </footer>
-    </article>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class='col-md-8'>
+                    <div class="col-sm-12">
+                                <h2>
+                                    @Model.Title
+                                </h2>
+                                <h4>
+                                    <span class="label label-info">Author: @Model.Author.FullName</span>
+                                </h4>
+                            <p>
+                                @Model.Content
+                            </p>
+                                @Html.ActionLink("Edit", "Edit", "Article", new { @id = Model.Id }, new { @class = "btn btn-success btn-xs" })
+                                @Html.ActionLink("Delete", "Delete", "Article", new { @id = Model.Id }, new { @class = "btn btn-danger btn-xs" })
+                                @Html.ActionLink("Back", "Index", "Article", null, new { @class = "btn btn-default btn-xs" })
+                    </div>
+        </div>
+        <div class='col-md-4'>
+            @Html.Partial("_SidebarPartial")
+        </div>
+    </div>
 </div>
 <hr />

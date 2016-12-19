@@ -18,12 +18,12 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("HealthHub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                <ul class="nav navbar-nav navbar-right">
-                    <li>@Html.ActionLink("Blog", "List", "Article")</li>
-                </ul>
             </div>
             <div class="navbar-collapse collapse">
-                @Html.Partial("_LoginPartial")
+                <ul class="nav navbar-nav navbar-left">
+                    <li>@Html.ActionLink("Blog", "List", "Article")</li>
+                </ul>  
+                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
