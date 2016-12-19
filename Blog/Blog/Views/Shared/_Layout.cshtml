@@ -18,6 +18,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("HealthHub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <ul class="nav navbar-nav navbar-right">
+                    <li>@Html.ActionLink("Blog", "List", "Article")</li>
+                </ul>
             </div>
             <div class="navbar-collapse collapse">
                 @Html.Partial("_LoginPartial")
@@ -26,8 +29,8 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <footer class="pull-right">
-            <p>&copy; @DateTime.Now.Year - SoftUni Blog</p>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - HealthHub</p>
         </footer>
     </div>
 

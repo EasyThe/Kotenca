@@ -5,27 +5,34 @@
 }
 
 <div class="container">
-    <div class="row">
-        @foreach (var article in Model)
-        {
-            <div class="col-sm-6">
-                <article>
-                    <header>
-                        <h2>
-                            @Html.ActionLink(@article.Title, "Details", "Article", new { @id = article.Id }, null)
-                        </h2>
-                    </header>
-                    <p>
-                        @article.Content
-                    </p>
-                    <footer class="pull-right">
-                        <small class="author">
-                            --author @article.Author.FullName
-                        </small>
-                    </footer>
-                </article>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class='col-md-8'>
+                <div class="row">
+                    @foreach (var article in Model)
+            {
+                        <div class="col-sm-12">
+                            <article>
+                                <header>
+                                    <h2 class="h2-custom">
+                                        @Html.ActionLink(@article.Title, "Details", "Article", new { @id = article.Id }, null)
+                                    </h2>
+                                </header>
+                                <p>
+                                    @article.Content
+                                </p>
+                                <h4 class="pull-right">
+                                    <span class="label label-info">Author: @article.Author.FullName</span>
+                                </h4>
+                            </article>
+                        </div>
+                    }
+                </div>
             </div>
-        }
+            <div class='col-md-4'>
+                @Html.Partial("_SidebarPartial")
+            </div>
+        </div>
     </div>
 </div>
 <hr />
