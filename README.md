@@ -3,7 +3,8 @@ Software Technologies Team for Practical Project
 
 # Информация за проекта
 * Език: C#
-* Тематика на уебсайта: 
+* Тематика на уебсайта: Здравословен живот
+* Име: HealthHub
 
 # Членове
 * EasyThe / SeyhanHalil - Seyhan Halil - Skype: sekoto15
