@@ -19,9 +19,9 @@ namespace Blog.Controllers
         {
             return View("Contact");
         }
-        public ActionResult View()
+        public ActionResult Tips()
         {
-            return View("View");
+            return View("Tips");
         }
     }
 }
