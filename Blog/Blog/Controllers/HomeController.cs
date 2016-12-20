@@ -15,5 +15,13 @@ namespace Blog.Controllers
             //return RedirectToAction("Index", "Home");
             //return RedirectToAction("List", "Article");
         }
+        public ActionResult Contact()
+        {
+            return View("Contact");
+        }
+        public ActionResult View()
+        {
+            return View("View");
+        }
     }
 }

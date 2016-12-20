@@ -18,16 +18,20 @@
                     <span class="icon-bar"></span>
                 </button>
                 @*@Html.ActionLink("HealthHub", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
-                <a href="/Home/Index"><img src="~/Content/images/logo.png" width="200"/></a>
+                <a href="/Home/Index"><img src="~/Content/images/logo.png" width="150" height="50"/></a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li>@Html.ActionLink("Blog", "List", "Article")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Blank", "View", "Home")</li>
                 </ul>  
                  @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
+            <center><a href="https://ardes.bg/" target="_blank"><img src="~/Content/images/banner.png" /></a></center>
+    <br />
     <div class="container body-content">
         @RenderBody()
         <footer>
