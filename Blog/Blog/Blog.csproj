@@ -301,6 +301,8 @@
     <Content Include="Content\images\logo.png" />
     <Content Include="Images\biceps-2_0.jpg" />
     <Content Include="Images\brain-illustration-1940x900_35269.jpg" />
+    <Content Include="Images\facebook-icon-preview-1.png" />
+    <Content Include="Images\Instagram-logo.png" />
     <Content Include="Images\jena-fitnes-voda-qbulka-metur-otslabvane-dieti-metabolizum-93899-500x334.jpg" />
     <Content Include="Images\kids-featured-4234image.jpg" />
     <Content Include="Images\maxresdefault.jpg" />
@@ -311,6 +313,7 @@
     <Content Include="Images\4-Steps-to-Healthy-Nutrition-fruits-and-vetables-e1466079080866.jpg" />
     <Content Include="Images\kids-featured-image.jpg" />
     <Content Include="Images\Resize.css" />
+    <Content Include="Images\Twitter_bird_logo_2012.svg.png" />
     <Content Include="obj\Debug\Blog.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\Blog.dll" />
     <Content Include="obj\Debug\Blog.pdb" />
