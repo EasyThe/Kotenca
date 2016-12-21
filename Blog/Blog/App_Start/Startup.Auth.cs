@@ -54,9 +54,9 @@ namespace Blog
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1457264854284922",
+               appSecret: "741d300c9ecd15e8478fe4c2c93c8d24");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
